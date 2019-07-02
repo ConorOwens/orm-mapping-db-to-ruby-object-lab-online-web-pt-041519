@@ -64,4 +64,10 @@ class Student
     g9
   end
   
+  def self.students_below_12th_grade
+    arr = []
+    self.all.map {|student| arr << student if student.grade != "12"}
+    arr
+  end
+  
 end
