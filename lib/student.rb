@@ -72,9 +72,12 @@ class Student
   
   def self.first_X_students_in_grade_10(x)
     arr = []
-    i = 1
+    i = 0
+    g10 = []
+    self.all.map {|student| g10 << student if student.grade == '10'}
     until i == x
-      
+      arr << g10[i]
+      i += 1
     end
     arr
   end
