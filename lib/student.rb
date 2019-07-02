@@ -70,4 +70,16 @@ class Student
     arr
   end
   
+  def first_X_students_in_grade_10(x)
+    arr = []
+    i = 1
+    until i == 10
+      self.all.map do |student|
+        arr << student
+        i += 1
+      end
+    end
+    arr
+  end
+  
 end
