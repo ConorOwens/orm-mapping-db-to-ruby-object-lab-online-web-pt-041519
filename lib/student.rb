@@ -31,7 +31,7 @@ class Student
         student = Student.new_from_db(row)
       end
       student
-    end
+    end.first
   end
   
   def save
