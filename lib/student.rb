@@ -74,10 +74,7 @@ class Student
     arr = []
     i = 1
     until i == x
-      self.all.map do |student|
-        arr << student
-        i += 1
-      end
+      
     end
     arr
   end
