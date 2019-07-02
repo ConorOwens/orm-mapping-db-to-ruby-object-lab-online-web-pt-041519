@@ -62,4 +62,6 @@ class Student
     g9 = []
     self.all.each {|student| g9 << student if student.grade == 9}
     g9
+  end
+  
 end
