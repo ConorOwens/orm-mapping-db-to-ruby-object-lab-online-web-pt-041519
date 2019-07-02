@@ -60,7 +60,7 @@ class Student
   
   def self.all_students_in_grade_9
     g9 = []
-    self.all.each {|student| g9 << student if student.grade == 9}
+    self.all.map {|student| g9 << student if student.grade == 9}
     g9
   end
   
