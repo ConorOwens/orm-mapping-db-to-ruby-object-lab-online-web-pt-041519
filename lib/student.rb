@@ -90,7 +90,7 @@ class Student
   
   def self.all_students_in_grade_X(x)
     g = []
-    self.all.map {|student| g << student if student.grade == }
+    self.all.map {|student| g << student if student.grade == x.to_s}
     g
   end
   
