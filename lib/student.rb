@@ -82,4 +82,10 @@ class Student
     arr
   end
   
+  def self.first_student_in_grade_10
+    g10 = []
+    self.all.map {|student| g10 << student if student.grade == '10'}
+    g10[0]
+  end
+  
 end
